@@ -10,7 +10,7 @@ export function ComingSoon({
   description?: string;
 }) {
   return (
-    <section className="relative mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center px-6 text-center">
+    <section className="relative mx-auto flex min-h-screen w-full max-w-4xl flex-col items-center justify-center px-6 text-center">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

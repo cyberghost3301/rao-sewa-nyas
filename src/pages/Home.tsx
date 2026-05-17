@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 function Home() {
   return (
-    <div className="relative overflow-hidden">
-      <section className="relative mx-auto max-w-7xl px-6 pb-10 pt-16 sm:pb-16 sm:pt-24">
+    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-19 md:pt-0">
+      <section className="relative mx-auto w-full max-w-7xl px-6 py-8 sm:py-10">
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-60 [background:radial-gradient(60%_40%_at_50%_0%,rgba(234,88,12,0.18),transparent),radial-gradient(50%_40%_at_100%_100%,rgba(16,185,129,0.18),transparent)]" />
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -19,7 +19,7 @@ function Home() {
             Est. for Bharat - Trust and Enterprise
           </span>
           <h1 className="mt-5 text-4xl font-bold tracking-tight text-india-navy sm:text-6xl">
-            Where <span className="text-india-gradient">enterprise</span> meets <span className="text-india-gradient">seva</span>.
+            Where <span className="text-india-gradient">enterprise</span> meets <span className="text-india-gradient">sewa</span>.
           </h1>
           <p className="mt-5 text-base text-muted-foreground sm:text-lg">
             Rao Sewa Nyas is a trust running six for-profit ventures and parallel non-profit initiatives - channeling every rupee of growth back into community impact.
@@ -41,7 +41,7 @@ function Home() {
         </motion.div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto mt-24 w-full max-w-7xl px-6 py-8 sm:py-10 md:mt-0">
         <div className="mb-8 flex items-end justify-between">
           <div>
             <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">Our For-profit Ventures</h2>
