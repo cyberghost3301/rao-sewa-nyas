@@ -43,7 +43,7 @@ export const services: Service[] = [
     accent: "from-violet-400 to-indigo-600",
   },
   {
-    name: "Security Services",
+    name: "Surveilance & Security Services",
     tagline:
       "State of the art surveillance and security solutions to protect your physical and digital assets.",
     url: "https://sss.raosewanyas.org/",
@@ -54,7 +54,7 @@ export const services: Service[] = [
     name: "IT Enabled Services",
     tagline:
       "Custom software development, digital infrastructure, and IT consulting to drive business growth.",
-    url: "https://ite.raosewanyas.org/",
+    url: "https://ites.raosewanyas.org/",
     icon: Monitor,
     accent: "from-emerald-400 to-teal-500",
   },

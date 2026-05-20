@@ -7,8 +7,6 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
   return (
     <motion.a
       href={service.url}
-      target="_blank"
-      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: 1,
