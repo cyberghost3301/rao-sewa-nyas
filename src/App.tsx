@@ -10,6 +10,8 @@ import Partner from "@/pages/Partner";
 import Team from "@/pages/Team";
 import Testimonials from "@/pages/Testimonials";
 import Portfolio from "@/pages/Portfolio";
+import PortfolioLucknow from "@/pages/PortfolioLucknow";
+import PortfolioDeoria from "@/pages/PortfolioDeoria";
 import Contact from "@/pages/Contact";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/lucknow" element={<PortfolioLucknow />} />
+            <Route path="/portfolio/deoria" element={<PortfolioDeoria />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Partner />} />
             <Route path="/terms" element={<Partner />} />
