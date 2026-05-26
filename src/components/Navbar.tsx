@@ -14,6 +14,7 @@ const navLinks = [
   { to: "/portfolio", label: "Portfolio" },
   { to: "/testimonials", label: "Testimonials" },
   { to: "/partner", label: "Partner" },
+  { to: "/credentials", label: "Credentials" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -72,6 +73,16 @@ export function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <NavLink
+            to="/donations"
+            className={({ isActive }) =>
+              isActive
+                ? "rounded-full bg-saffron/80 px-4 py-2 text-sm font-semibold text-white shadow"
+                : "rounded-full bg-saffron px-4 py-2 text-sm font-semibold text-white shadow transition-all hover:-translate-y-0.5 hover:shadow-md"
+            }
+          >
+            Donate
+          </NavLink>
         </nav>
 
         <button
@@ -124,6 +135,13 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              to="/donations"
+              onClick={() => setOpen(false)}
+              className="block rounded-full bg-saffron px-4 py-2.5 text-center text-sm font-semibold text-white shadow mt-2"
+            >
+              Donate
+            </Link>
           </div>
         </div>
       )}

@@ -13,6 +13,8 @@ import Portfolio from "@/pages/Portfolio";
 import PortfolioLucknow from "@/pages/PortfolioLucknow";
 import PortfolioDeoria from "@/pages/PortfolioDeoria";
 import Contact from "@/pages/Contact";
+import Credentials from "@/pages/Credentials";
+import Donations from "@/pages/Donations";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
             <Route path="/portfolio/lucknow" element={<PortfolioLucknow />} />
             <Route path="/portfolio/deoria" element={<PortfolioDeoria />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/credentials" element={<Credentials />} />
+            <Route path="/donations" element={<Donations />} />
             <Route path="/privacy" element={<Partner />} />
             <Route path="/terms" element={<Partner />} />
             <Route path="/faq" element={<Partner />} />

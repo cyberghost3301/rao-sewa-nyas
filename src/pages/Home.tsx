@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 const bentoCards = [
   {
-    heading: "Enterprise That Gives Back. Without the Charity Act.",
-    body: "Rao Sewa Nyas is a registered Trust, but we don't ask for donations to run our operations. Our enterprise verticals from solar installations to IT services compete on technical merit and pricing. The profits from these verticals fund our core community initiatives.",
+    heading: "Powered by Community and Commerce",
+    body: "Rao Sewa Nyas is a registered Trust powered by a dual financial engine. While public donations form a crucial backbone for our philanthropic missions, our six for-profit enterprise verticals compete on technical merit to ensure our community initiatives remain sustainably and heavily funded.",
     span: "md:col-span-2",
   },
   {
