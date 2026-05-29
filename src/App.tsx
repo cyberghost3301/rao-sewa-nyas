@@ -22,6 +22,12 @@ import Contact from "@/pages/Contact";
 import Credentials from "@/pages/Credentials";
 import Donations from "@/pages/Donations";
 
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
+import CookiePolicy from "@/pages/CookiePolicy";
+import Disclaimer from "@/pages/Disclaimer";
+import FAQ from "@/pages/FAQ";
+
 function AnimatedRoutes() {
   const location = useLocation();
 
@@ -62,12 +68,12 @@ function AnimatedRoutes() {
         <Route path="/credentials" element={<PageWrapper><Credentials /></PageWrapper>} />
         <Route path="/donations" element={<PageWrapper><Donations /></PageWrapper>} />
         
-        {/* Placeholder for legal pages, using Partner temporarily until built */}
-        <Route path="/privacy" element={<PageWrapper><Partner /></PageWrapper>} />
-        <Route path="/terms" element={<PageWrapper><Partner /></PageWrapper>} />
-        <Route path="/faq" element={<PageWrapper><Partner /></PageWrapper>} />
-        <Route path="/cookies" element={<PageWrapper><Partner /></PageWrapper>} />
-        <Route path="/disclaimer" element={<PageWrapper><Partner /></PageWrapper>} />
+        {/* Legal & Compliance Pages */}
+        <Route path="/privacy" element={<PageWrapper><Privacy /></PageWrapper>} />
+        <Route path="/terms" element={<PageWrapper><Terms /></PageWrapper>} />
+        <Route path="/faq" element={<PageWrapper><FAQ /></PageWrapper>} />
+        <Route path="/cookies" element={<PageWrapper><CookiePolicy /></PageWrapper>} />
+        <Route path="/disclaimer" element={<PageWrapper><Disclaimer /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );
