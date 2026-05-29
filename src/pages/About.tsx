@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const cards = [
   {
@@ -16,6 +17,13 @@ const cards = [
     body: "We operate out of Lucknow and Deoria, managing teams of engineers, technicians, and project managers. We do not ask for charity contracts. We bid for enterprise RFPs, and we win on technical specifications.",
     span: "md:col-span-2",
   },
+];
+
+const metrics = [
+  { label: "Villages Supported", value: 120, prefix: "", suffix: "+" },
+  { label: "Solar Commissioned", value: 45, prefix: "", suffix: " MW" },
+  { label: "Enterprise Clients", value: 300, prefix: "", suffix: "+" },
+  { label: "Profits Retained in UP", value: 100, prefix: "", suffix: "%" },
 ];
 
 function About() {
@@ -58,6 +66,32 @@ function About() {
           </motion.div>
         ))}
       </div>
+
+      {/* ── Impact Metrics ─────────────────────────────────────── */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="mx-auto mt-24 max-w-5xl rounded-[2rem] bg-india-navy/5 p-8 sm:p-12"
+      >
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          {metrics.map((metric, index) => (
+            <div key={metric.label} className="text-center">
+              <div className="text-3xl font-bold tracking-tight text-india-navy sm:text-4xl lg:text-5xl">
+                <AnimatedCounter
+                  value={metric.value}
+                  prefix={metric.prefix}
+                  suffix={metric.suffix}
+                />
+              </div>
+              <div className="mt-2 text-sm font-medium text-muted-foreground">
+                {metric.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 }
