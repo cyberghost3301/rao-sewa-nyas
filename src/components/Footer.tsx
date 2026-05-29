@@ -85,8 +85,8 @@ export function Footer() {
             </div>
           </div>
           
-          <div className="mt-8 overflow-hidden pointer-events-none w-full">
-            <h1 className="text-center font-display text-[10vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] select-none whitespace-nowrap">
+          <div className="mt-8 w-full pointer-events-none flex justify-center overflow-visible">
+            <h1 className="text-center font-display text-[7vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] select-none whitespace-nowrap">
               RAO SEWA NYAS
             </h1>
           </div>
