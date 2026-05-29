@@ -8,6 +8,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+
 const navLinks = [
   { to: "/about", label: "About" },
   { to: "/team", label: "Team" },
@@ -20,10 +22,27 @@ const navLinks = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setIsScrolled(latest > 20);
+  });
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/40 bg-white/70 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      className={`fixed left-0 right-0 z-50 mx-auto transition-all duration-300 ease-in-out ${
+        isScrolled
+          ? "top-4 max-w-6xl rounded-full border border-white/40 bg-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl"
+          : "top-0 w-full border-b border-border/40 bg-white/40 backdrop-blur-xl"
+      }`}
+    >
+      <div className={`mx-auto flex items-center justify-between transition-all duration-300 ${
+        isScrolled ? "h-16 px-6" : "h-20 max-w-7xl px-4 sm:px-6 lg:px-8"
+      }`}>
         <Link to="/" className="hidden items-center gap-3 font-display text-lg font-bold md:flex">
           <img
             src="/logo.png"
@@ -145,6 +164,6 @@ export function Navbar() {
           </div>
         </div>
       )}
-    </header>
+    </motion.header>
   );
 }
