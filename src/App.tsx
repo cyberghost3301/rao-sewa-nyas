@@ -83,7 +83,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col selection:bg-saffron/20 selection:text-saffron">
+      <div className="min-h-screen bg-india-gradient flex flex-col selection:bg-saffron/20 selection:text-saffron">
         <Navbar />
         <main className="flex-1 flex flex-col pt-4">
           <AnimatedRoutes />

@@ -193,8 +193,8 @@
 @utility bg-india-gradient {
   background-color: var(--color-background);
   background-image: 
-    radial-gradient(at 0% 0%, color-mix(in oklab, var(--saffron) 15%, transparent) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, color-mix(in oklab, var(--india-green) 15%, transparent) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, color-mix(in oklab, var(--saffron) 8%, transparent) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, color-mix(in oklab, var(--india-green) 8%, transparent) 0px, transparent 50%);
 }
 
 @utility text-india-gradient {
