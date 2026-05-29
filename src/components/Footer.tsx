@@ -6,10 +6,10 @@ export function Footer() {
     <footer className="relative mt-24 border-t border-border/50 bg-white/40 pt-16 backdrop-blur-3xl overflow-hidden">
       {/* Decorative ambient glow */}
       <div className="absolute bottom-0 left-1/2 -z-10 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-saffron/5 blur-[100px]" />
-      
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-8">
-          
+
           {/* Brand & Quick Contact (Col Span 5) */}
           <div className="flex flex-col items-start lg:col-span-5">
             <Link to="/" className="inline-flex items-center gap-3">
@@ -19,7 +19,7 @@ export function Footer() {
             <p className="mt-6 max-w-sm text-base leading-relaxed text-muted-foreground">
               A registered Trust delivering commercial-grade enterprise services across Uttar Pradesh to fund sustainable community infrastructure.
             </p>
-            
+
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><Phone className="h-4 w-4" /></div>
@@ -27,11 +27,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><Mail className="h-4 w-4" /></div>
-                <span>enterprise@raosewanyas.org</span>
+                <span>hello@raosewanyas.org</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><MapPin className="h-4 w-4" /></div>
-                <span>Gomti Nagar, Lucknow | Gorakhpur Road, Deoria</span>
+                <span>Keshav Nagar, Lucknow | Main Road, Deoria</span>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export function Footer() {
                 <li><Link to="/credentials" className="transition-colors hover:text-saffron">Trust Credentials</Link></li>
               </ul>
             </div>
-            
+
             <div>
               <h3 className="font-display text-sm font-semibold tracking-wider text-india-navy uppercase">Organization</h3>
               <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
@@ -84,7 +84,7 @@ export function Footer() {
               <span className="flex items-center gap-1 rounded-full border border-border/50 bg-white/50 px-3 py-1 backdrop-blur-sm">CSR Eligible</span>
             </div>
           </div>
-          
+
           <div className="mt-8 w-full pointer-events-none flex justify-center overflow-visible">
             <h1 className="text-center font-display text-[7vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] select-none whitespace-nowrap">
               RAO SEWA NYAS
