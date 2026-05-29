@@ -58,7 +58,48 @@ function NonProfit() {
         </p>
       </motion.div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Featured Initiative: B.A.R.C */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-16 mb-16 glass-card overflow-hidden rounded-3xl"
+      >
+        <div className="grid grid-cols-1 items-center gap-8 p-8 lg:grid-cols-2 lg:p-12">
+          {/* Left Column: Copy & CTA */}
+          <div className="flex flex-col items-start">
+            <span className="inline-flex items-center rounded-full border border-saffron/30 bg-saffron/10 px-3 py-1 text-xs font-medium text-saffron">
+              Featured Initiative
+            </span>
+            <h2 className="mt-5 text-2xl font-bold text-india-navy sm:text-3xl">
+              B.A.R.C: Pawsitive Rescue Hub
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Technology meets compassion. B.A.R.C is our dedicated digital infrastructure for coordinating stray animal rescues, managing shelter operations, and facilitating adoptions across Uttar Pradesh.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              By unifying volunteers, veterinarians, and donors on a single platform, we ensure no distress call goes unanswered. This is how we scale grassroots philanthropy through enterprise-grade technology.
+            </p>
+            <a
+              href="https://barc.raosewanyas.org/"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-india-navy px-6 py-2.5 text-sm font-medium text-white shadow-lg transition-transform hover:-translate-y-0.5 hover:shadow-xl"
+            >
+              Access B.A.R.C Platform
+            </a>
+          </div>
+
+          {/* Right Column: App Screenshot Placeholder */}
+          <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-muted/50 shadow-inner">
+            <img
+              src="/placeholder.svg"
+              alt="B.A.R.C App Interface"
+              className="h-full w-full rounded-lg object-cover"
+            />
+          </div>
+        </div>
+      </motion.div>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {initiatives.map((initiative, index) => {
           const Icon = initiative.icon;
 
