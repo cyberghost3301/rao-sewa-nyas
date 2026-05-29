@@ -42,7 +42,7 @@ const initiatives = [
 
 function NonProfit() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24">
+    <div className="mx-auto max-w-7xl px-6 pb-16 pt-32">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -2,29 +2,35 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { services } from "@/lib/services";
 import { ServiceCard } from "@/components/ServiceCard";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck, MapPin, Landmark, ArrowUpRight } from "lucide-react";
 
 const bentoCards = [
   {
+    icon: Landmark,
     heading: "Powered by Community and Commerce",
     body: "Rao Sewa Nyas is a registered Trust powered by a dual financial engine. While public donations form a crucial backbone for our philanthropic missions, our six for-profit enterprise verticals compete on technical merit to ensure our community initiatives remain sustainably and heavily funded.",
     span: "md:col-span-2",
+    accent: "text-saffron",
   },
   {
+    icon: ShieldCheck,
     heading: "Pure Enterprise Delivery",
     body: "Commercial SLAs. Corporate accountability. No excuses. When you hire us for security or telecom, you are hiring a technical vendor, not doing a good deed.",
     span: "md:col-span-1",
+    accent: "text-india-navy",
   },
   {
+    icon: MapPin,
     heading: "UP Focused Capital Retention",
     body: "When you hire a multinational for IT or solar, the margin leaves the state. When you hire Rao Sewa Nyas, the margin builds local infrastructure, funds local education, and directly subsidizes our non-profit operations right here in Uttar Pradesh.",
     span: "md:col-span-3",
+    accent: "text-india-green",
   },
 ];
 
 function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-19 md:pt-0">
+    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-32">
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative mx-auto w-full max-w-7xl px-6 py-8 sm:py-10">
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-60 [background:radial-gradient(60%_40%_at_50%_0%,rgba(234,88,12,0.18),transparent),radial-gradient(50%_40%_at_100%_100%,rgba(16,185,129,0.18),transparent)]" />
@@ -81,22 +87,36 @@ function Home() {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {bentoCards.map((card, index) => (
+          {bentoCards.map((card, index) => {
+            const Icon = card.icon;
+            return (
             <motion.div
               key={card.heading}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-              className={`glass-card rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 ${card.span}`}
+              className={`group relative overflow-hidden glass-card rounded-[2rem] p-8 sm:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(234,88,12,0.15)] hover:border-saffron/30 ${card.span}`}
             >
-              <h3 className="text-lg font-semibold text-india-navy sm:text-xl">
-                {card.heading}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {card.body}
-              </p>
+              <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-saffron/10 blur-3xl transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
+              
+              <div className="flex h-full flex-col justify-between gap-8 relative z-10">
+                <div className="flex items-start justify-between">
+                  <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/60 shadow-sm border border-white/40 backdrop-blur-md ${card.accent}`}>
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <ArrowUpRight className="h-5 w-5 text-muted-foreground/50 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-saffron" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold tracking-tight text-india-navy sm:text-2xl">
+                    {card.heading}
+                  </h3>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                    {card.body}
+                  </p>
+                </div>
+              </div>
             </motion.div>
-          ))}
+          )})}
         </div>
       </section>
 
