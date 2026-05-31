@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { BookOpen, HandHeart, Sprout, Users, Droplets, HeartPulse } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const initiatives = [
   {
@@ -58,7 +60,7 @@ function NonProfit() {
         </p>
       </motion.div>
 
-      {/* Featured Initiative: B.A.R.C */}
+      {/* Featured Initiative: B.A.R.C 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -66,7 +68,7 @@ function NonProfit() {
         className="mt-16 mb-16 glass-card overflow-hidden rounded-3xl"
       >
         <div className="grid grid-cols-1 items-center gap-8 p-8 lg:grid-cols-2 lg:p-12">
-          {/* Left Column: Copy & CTA */}
+          {/* Left Column: Copy & CTA *\/}
           <div className="flex flex-col items-start">
             <span className="inline-flex items-center rounded-full border border-saffron/30 bg-saffron/10 px-3 py-1 text-xs font-medium text-saffron">
               Featured Initiative
@@ -88,7 +90,7 @@ function NonProfit() {
             </a>
           </div>
 
-          {/* Right Column: App Screenshot Placeholder */}
+          {/* Right Column: App Screenshot Placeholder *\/}
           <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-muted/50 shadow-inner">
             <img
               src="/placeholder.svg"
@@ -98,7 +100,51 @@ function NonProfit() {
           </div>
         </div>
       </motion.div>
+      */}
 
+      {/* Featured Initiative: R.U.N */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-16 mb-16 glass-card overflow-hidden rounded-3xl"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-8">
+          {/* Left Column: Copy & CTA */}
+          <div className="flex flex-col items-start">
+            <span className="text-sm font-bold text-green-600 uppercase tracking-wider mb-2 block">
+              Featured Green Initiative
+            </span>
+            <h2 className="mt-5 text-2xl font-bold text-india-navy sm:text-3xl">
+              R.U.N: Rao Urja Niti
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Empowering daily wage earners through clean energy. E-rickshaw drivers often face devastating debt or a complete loss of livelihood when their batteries degrade, unable to afford the ₹40,000 to ₹48,000 replacement cost in a single shot.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Under the Rao Urja Niti (R.U.N) scheme, we provide e-rickshaw battery replacements at interest-free capital loans. This directly protects their daily income, keeps zero-emission transit moving, and bridges the gap between commercial infrastructure and genuine community empowerment.
+            </p>
+            <div className="mt-8">
+              <Link to="/initiatives/run">
+                <Button className="rounded-full bg-india-navy hover:bg-india-navy/90 text-white shadow-lg transition-transform hover:-translate-y-0.5 hover:shadow-xl">
+                  Learn More About R.U.N
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Right Column: App Screenshot Placeholder */}
+          <div className="relative overflow-hidden rounded-xl">
+            <img
+              src="/run_initiative.jpg"
+              alt="R.U.N E-Rickshaw Battery Initiative"
+              className="w-full h-auto rounded-lg object-cover aspect-video bg-muted/50"
+            />
+          </div>
+        </div>
+      </motion.div>
+
+      <h2 className="text-2xl font-bold mt-16 mb-8 text-foreground">Future Initiatives</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {initiatives.map((initiative, index) => {
           const Icon = initiative.icon;

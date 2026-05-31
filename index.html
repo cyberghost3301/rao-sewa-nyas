@@ -2,7 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rao Sewa Nyas",
+      "url": "https://raosewanyas.org",
+      "logo": "https://raosewanyas.org/logo.png"
+    }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -10,8 +21,30 @@
     />
     <title>Rao Sewa Nyas | Enterprise Services Lucknow &amp; UP</title>
   </head>
-  <body>
+  <body class="select-none">
     <div id="root"></div>
+    <script>
+      // Disable right-click
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      
+      // Disable keyboard shortcuts for copy/paste/inspect
+      document.addEventListener('keydown', (e) => {
+        if (
+          e.key === 'F12' ||
+          (e.ctrlKey && ['u', 'U', 'c', 'C', 'v', 'V', 'x', 'X', 's', 'S', 'a', 'A', 'p', 'P'].includes(e.key)) ||
+          (e.metaKey && ['c', 'C', 'v', 'V', 'x', 'X', 's', 'S', 'a', 'A', 'p', 'P'].includes(e.key))
+        ) {
+          e.preventDefault();
+        }
+      });
+      
+      // Disable drag and drop for images
+      document.addEventListener('dragstart', (e) => {
+        if (e.target.nodeName.toUpperCase() === 'IMG') {
+          e.preventDefault();
+        }
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

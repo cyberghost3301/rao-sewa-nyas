@@ -21,6 +21,7 @@ import PortfolioDeoria from "@/pages/PortfolioDeoria";
 import Contact from "@/pages/Contact";
 import Credentials from "@/pages/Credentials";
 import Donations from "@/pages/Donations";
+import RunInitiative from "@/pages/RunInitiative";
 
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -58,6 +59,7 @@ function AnimatedRoutes() {
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/operations/for-profit" element={<PageWrapper><ForProfit /></PageWrapper>} />
         <Route path="/operations/non-profit" element={<PageWrapper><NonProfit /></PageWrapper>} />
+        <Route path="/initiatives/run" element={<PageWrapper><RunInitiative /></PageWrapper>} />
         <Route path="/partner" element={<PageWrapper><Partner /></PageWrapper>} />
         <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
         <Route path="/testimonials" element={<PageWrapper><Testimonials /></PageWrapper>} />
