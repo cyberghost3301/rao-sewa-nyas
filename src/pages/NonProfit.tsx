@@ -126,7 +126,7 @@ function NonProfit() {
             </p>
             <div className="mt-8">
               <Link to="/initiatives/run">
-                <Button className="rounded-full bg-india-navy hover:bg-india-navy/90 text-white shadow-lg transition-transform hover:-translate-y-0.5 hover:shadow-xl">
+                <Button className="rounded-full bg-india-navy hover:bg-india-navy/90 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl active:scale-95">
                   Learn More About R.U.N
                 </Button>
               </Link>
@@ -134,11 +134,13 @@ function NonProfit() {
           </div>
 
           {/* Right Column: App Screenshot Placeholder */}
-          <div className="relative overflow-hidden rounded-xl">
+          <div className="relative overflow-hidden rounded-xl bg-muted/20">
             <img
               src="/run_initiative.jpg"
               alt="R.U.N E-Rickshaw Battery Initiative"
-              className="w-full h-auto rounded-lg object-cover aspect-video bg-muted/50"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto rounded-lg object-cover aspect-video bg-muted/50 transition-opacity duration-500 hover:opacity-95"
             />
           </div>
         </div>

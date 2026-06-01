@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { services } from "@/lib/services";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ArrowRight, ShieldCheck, MapPin, Landmark, ArrowUpRight } from "lucide-react";
+import { FadeIn } from "@/components/FadeIn";
 
 const bentoCards = [
   {
@@ -122,27 +123,31 @@ function Home() {
 
       {/* ── 6 Core Verticals (existing floating cards) ─────────── */}
       <section className="mx-auto mt-24 w-full max-w-7xl px-6 py-8 sm:py-10 md:mt-16">
-        <div className="mb-8 flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">
-              Our 6 Core Verticals
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Six independent businesses, one shared mission.
-            </p>
+        <FadeIn direction="up">
+          <div className="mb-8 flex items-end justify-between">
+            <div>
+              <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">
+                Our 6 Core Verticals
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Six independent businesses, one shared mission.
+              </p>
+            </div>
+            <Link
+              to="/operations/for-profit"
+              className="hidden text-sm font-medium text-saffron hover:underline sm:inline"
+            >
+              View all &rarr;
+            </Link>
           </div>
-          <Link
-            to="/operations/for-profit"
-            className="hidden text-sm font-medium text-saffron hover:underline sm:inline"
-          >
-            View all &rarr;
-          </Link>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <ServiceCard key={service.name} service={service} index={index} />
-          ))}
-        </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service, index) => (
+              <FadeIn key={service.name} delay={index * 0.1} direction="up">
+                <ServiceCard service={service} index={index} />
+              </FadeIn>
+            ))}
+          </div>
+        </FadeIn>
       </section>
     </div>
   );
