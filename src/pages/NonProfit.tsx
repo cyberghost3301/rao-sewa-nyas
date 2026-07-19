@@ -60,7 +60,7 @@ function NonProfit() {
         </p>
       </motion.div>
 
-      {/* Featured Initiative: B.A.R.C 
+      {/* Featured Initiative: B.A.R.C */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ function NonProfit() {
         className="mt-16 mb-16 glass-card overflow-hidden rounded-3xl"
       >
         <div className="grid grid-cols-1 items-center gap-8 p-8 lg:grid-cols-2 lg:p-12">
-          {/* Left Column: Copy & CTA *\/}
+          {/* Left Column: Copy & CTA */}
           <div className="flex flex-col items-start">
             <span className="inline-flex items-center rounded-full border border-saffron/30 bg-saffron/10 px-3 py-1 text-xs font-medium text-saffron">
               Featured Initiative
@@ -90,17 +90,18 @@ function NonProfit() {
             </a>
           </div>
 
-          {/* Right Column: App Screenshot Placeholder *\/}
+          {/* Right Column: App Screenshot Placeholder */}
           <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-muted/50 shadow-inner">
             <img
-              src="/placeholder.svg"
+              src="/barc.png"
               alt="B.A.R.C App Interface"
-              className="h-full w-full rounded-lg object-cover"
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full rounded-lg object-cover transition-opacity duration-500 hover:opacity-95"
             />
           </div>
         </div>
       </motion.div>
-      */}
 
       {/* Featured Initiative: R.U.N */}
       <motion.div

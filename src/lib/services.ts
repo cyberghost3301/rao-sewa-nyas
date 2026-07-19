@@ -1,4 +1,4 @@
-import { Cpu, Monitor, Radio, ShieldCheck, Sun, Zap } from "lucide-react";
+import { Cpu, Monitor, Radio, ShieldCheck, Sun, Zap, Building2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -13,7 +13,7 @@ export const services: Service[] = [
   {
     name: "Energy Solutions",
     tagline:
-      "Comprehensive energy backup solutions including inverters and batteries for residential and commercial needs.",
+      "Comprehensive energy solutions including inverters and batteries for residential and commercial needs.",
     url: "https://es.raosewanyas.org/",
     icon: Zap,
     accent: "from-orange-400 to-amber-500",
@@ -57,5 +57,13 @@ export const services: Service[] = [
     url: "https://ites.raosewanyas.org/",
     icon: Monitor,
     accent: "from-emerald-400 to-teal-500",
+  },
+  {
+    name: "Real Estate Services",
+    tagline:
+      "Verified properties across Residential, Commercial, and Industrial sectors for purchase, lease, and rent.",
+    url: "https://res.raosewanyas.org/",
+    icon: Building2,
+    accent: "from-sky-400 to-blue-600",
   },
 ];

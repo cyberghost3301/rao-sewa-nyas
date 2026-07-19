@@ -30,7 +30,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-semibold text-india-navy mb-4">3. Regulatory Acknowledgement</h2>
             <p>
-              Rao Sewa Nyas operates under the legal framework of a registered Trust. All commercial revenues generated via our six verticals are legally bound to be reinvested into our community infrastructure and philanthropic initiatives within Uttar Pradesh, in compliance with our Trust deed.
+              Rao Sewa Nyas operates under the legal framework of a registered Trust. All commercial revenues generated via our seven verticals are legally bound to be reinvested into our community infrastructure and philanthropic initiatives within Uttar Pradesh, in compliance with our Trust deed.
             </p>
           </section>
 

@@ -16,7 +16,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-2xl font-semibold text-india-navy mb-4">1. Entity Structure & Liability</h2>
             <p>
-              Rao Sewa Nyas is a registered Trust operating six commercial verticals. While we utilize our enterprise revenues to fund social impact projects, our commercial contracts are executed purely as B2B service agreements. The Trust structure does not absolve us of commercial liability, nor does it grant our clients any tax exemptions unless explicitly defined under CSR project documentation.
+              Rao Sewa Nyas is a registered Trust operating seven commercial verticals. While we utilize our enterprise revenues to fund social impact projects, our commercial contracts are executed purely as B2B service agreements. The Trust structure does not absolve us of commercial liability, nor does it grant our clients any tax exemptions unless explicitly defined under CSR project documentation.
             </p>
           </section>
 

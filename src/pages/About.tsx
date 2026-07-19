@@ -4,7 +4,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 const cards = [
   {
     heading: "Why We Built The Enterprise Division",
-    body: "Our Trust operates primary healthcare and educational initiatives across UP. To fund these infinitely, without donor fatigue, we established our six for-profit verticals. They compete on merit and fund our mission directly.",
+    body: "Our Trust operates primary healthcare and educational initiatives across UP. To fund these infinitely, without donor fatigue, we established our seven for-profit verticals. They compete on merit and fund our mission directly.",
     span: "",
   },
   {

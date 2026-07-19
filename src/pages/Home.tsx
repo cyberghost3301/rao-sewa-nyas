@@ -9,7 +9,7 @@ const bentoCards = [
   {
     icon: Landmark,
     heading: "Powered by Community and Commerce",
-    body: "Rao Sewa Nyas is a registered Trust powered by a dual financial engine. While public donations form a crucial backbone for our philanthropic missions, our six for-profit enterprise verticals compete on technical merit to ensure our community initiatives remain sustainably and heavily funded.",
+    body: "Rao Sewa Nyas is a registered Trust powered by a dual financial engine. While public donations form a crucial backbone for our philanthropic missions, our seven for-profit enterprise verticals compete on technical merit to ensure our community initiatives remain sustainably and heavily funded.",
     span: "md:col-span-2",
     accent: "text-saffron",
   },
@@ -50,7 +50,7 @@ function Home() {
             Platform
           </h1>
           <p className="mt-5 text-base text-muted-foreground sm:text-lg">
-            We run a for-profit, six-vertical commercial operation across
+            We run a for-profit, seven-vertical commercial operation across
             Lucknow and Deoria. We charge market rates because subsidized work
             breaks down. Every rupee of profit stays inside Uttar Pradesh.
           </p>
@@ -121,16 +121,16 @@ function Home() {
         </div>
       </section>
 
-      {/* ── 6 Core Verticals (existing floating cards) ─────────── */}
+      {/* ── 7 Core Verticals (existing floating cards) ─────────── */}
       <section className="mx-auto mt-24 w-full max-w-7xl px-6 py-8 sm:py-10 md:mt-16">
         <FadeIn direction="up">
           <div className="mb-8 flex items-end justify-between">
             <div>
               <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">
-                Our 6 Core Verticals
+                Our 7 Core Verticals
               </h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                Six independent businesses, one shared mission.
+                Seven independent businesses, one shared mission.
               </p>
             </div>
             <Link

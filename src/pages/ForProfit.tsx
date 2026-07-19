@@ -51,7 +51,7 @@ function ForProfit() {
           Operations -- For-profit
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-india-navy drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] sm:text-5xl lg:text-6xl">
-          Six Services. One Standard.{" "}
+          Seven Services. One Standard.{" "}
           <span className="text-india-gradient">Zero Compartmentalization.</span>
         </h1>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg">
@@ -91,7 +91,7 @@ function ForProfit() {
           className="mb-8 max-w-2xl"
         >
           <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">
-            Why Clients Use One Vendor Across All Six
+            Why Clients Use One Vendor Across All Seven
           </h2>
         </motion.div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

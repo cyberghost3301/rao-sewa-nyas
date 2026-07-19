@@ -128,7 +128,7 @@ function Team() {
             Department Structure
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            Six departments. Each one aligned to a commercial vertical.
+            Seven departments. Each one aligned to a commercial vertical.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
