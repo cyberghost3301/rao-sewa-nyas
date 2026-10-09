@@ -23,15 +23,15 @@ export function Footer() {
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><Phone className="h-4 w-4" /></div>
-                <span>+91 9988776655</span>
+                <span>+91 79854 54216</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><Mail className="h-4 w-4" /></div>
-                <span>hello@raosewanyas.org</span>
+                <span>raosewanyas@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-india-navy/5 text-india-navy"><MapPin className="h-4 w-4" /></div>
-                <span>Keshav Nagar, Lucknow | Main Road, Deoria</span>
+                <span>610/586 Keshav Nagar, Sitapur Road, Lucknow – 226020</span>
               </div>
             </div>
           </div>
@@ -79,10 +79,26 @@ export function Footer() {
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Rao Sewa Nyas. A Registered Trust operating in Uttar Pradesh.
             </p>
-            <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground">
+            {/* <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground">
               <span className="flex items-center gap-1 rounded-full border border-border/50 bg-white/50 px-3 py-1 backdrop-blur-sm">UPNEDA Approved Vendor</span>
               <span className="flex items-center gap-1 rounded-full border border-border/50 bg-white/50 px-3 py-1 backdrop-blur-sm">CSR Eligible</span>
-            </div>
+            </div> */}
+
+            {/* Developer credit */}
+            <p className="font-body text-[11px] text-[#8c5a6d] text-center md:text-right">
+              Crafted by{" "}
+              <a
+                href="https://spirecrest.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group ml-0.5 inline-flex items-center gap-1.5 align-middle font-semibold uppercase tracking-[0.18em] text-[#9B8AAA] transition-colors hover:text-foreground"
+              >
+                <span aria-hidden className="text-syka-gold transition-transform duration-300 group-hover:rotate-90">
+                  ✦
+                </span>
+                Spirecrest Solutions
+              </a>
+            </p>
           </div>
 
           <div className="mt-8 w-full pointer-events-none flex justify-center overflow-visible">

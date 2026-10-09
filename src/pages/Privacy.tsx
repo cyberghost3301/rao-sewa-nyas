@@ -51,7 +51,7 @@ export default function Privacy() {
             <h2 className="text-2xl font-semibold text-india-navy mb-4">5. Contact Us</h2>
             <p>
               For privacy-related inquiries or data deletion requests, please contact our compliance officer at: <br />
-              <strong>Email:</strong> compliance@raosewanyas.org
+              <strong>Email:</strong> raosewanyas@gmail.com
             </p>
           </section>
         </div>

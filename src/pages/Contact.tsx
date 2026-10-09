@@ -26,7 +26,8 @@ const details: ContactDetail[] = [
   {
     icon: MapPin,
     title: "Lucknow Headquarters",
-    body: "Urban execution, IT, and enterprise sales base.",
+    body: "610/586 Keshav Nagar, Sitapur Road, Lucknow, Uttar Pradesh – 226020",
+    extra: "+91 79854 54216",
   },
   {
     icon: MapPin,
@@ -36,7 +37,7 @@ const details: ContactDetail[] = [
   {
     icon: Mail,
     title: "Corporate Inquiries",
-    body: "enterprise@raosewanyas.org",
+    body: "raosewanyas@gmail.com",
     extra:
       "For RFP responses, technical bids, and large-scale deployment consulting.",
   },
@@ -49,6 +50,7 @@ const serviceOptions = [
   "Automation Services",
   "Security Services",
   "IT Enabled Services",
+  "Real Estate Services",
 ];
 
 function Contact() {
