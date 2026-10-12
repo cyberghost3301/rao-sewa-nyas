@@ -1,0 +1,7 @@
+# Security Policy — Rao Sewa Nyas
+# https://raosewanyas.org/.well-known/security.txt
+
+Contact: mailto:raosewanyas@gmail.com
+Preferred-Languages: en, hi
+Canonical: https://raosewanyas.org/.well-known/security.txt
+Expires: 2027-12-31T23:59:59.000Z

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://raosewanyas.org/</loc>
+    <image:image>
+      <image:loc>https://raosewanyas.org/logo.png</image:loc>
+      <image:title>Rao Sewa Nyas Official Logo</image:title>
+      <image:caption>Logo of Rao Sewa Nyas, a registered Trust delivering enterprise services across Uttar Pradesh</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://raosewanyas.org/operations/non-profit</loc>
+    <image:image>
+      <image:loc>https://raosewanyas.org/barc.png</image:loc>
+      <image:title>B.A.R.C Pawsitive Rescue Hub Interface</image:title>
+      <image:caption>Digital platform for coordinating stray animal rescues and shelter operations across Uttar Pradesh</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raosewanyas.org/run_initiative.jpg</image:loc>
+      <image:title>R.U.N Rao Urja Niti E-Rickshaw Battery Initiative</image:title>
+      <image:caption>Interest-free e-rickshaw battery replacement programme for daily wage earners in Lucknow and Deoria</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://raosewanyas.org/initiatives/run</loc>
+    <image:image>
+      <image:loc>https://raosewanyas.org/run_initiative.jpg</image:loc>
+      <image:title>R.U.N Initiative - Green Transit Support</image:title>
+      <image:caption>Rao Urja Niti provides interest-free e-rickshaw battery replacements to protect daily wage earners</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

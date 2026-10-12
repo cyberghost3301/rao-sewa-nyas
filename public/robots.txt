@@ -1,0 +1,73 @@
+# ──────────────────────────────────────────────────────────────
+#  robots.txt — Rao Sewa Nyas  (https://raosewanyas.org)
+#  Last updated: 2026-10-12
+# ──────────────────────────────────────────────────────────────
+
+# Allow all well-behaved crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# ── AI / LLM Crawlers (Generative Engine Optimization) ──────
+# Allow AI crawlers to ensure visibility in AI-generated answers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ── Sitemaps ─────────────────────────────────────────────────
+Sitemap: https://raosewanyas.org/sitemap.xml
+Sitemap: https://raosewanyas.org/sitemap-images.xml

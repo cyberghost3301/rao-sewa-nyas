@@ -1,25 +1,274 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
+    <!-- ═══════════════════ CORE META ═══════════════════════════ -->
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ═══════════════════ SEO META ════════════════════════════ -->
+    <title>Rao Sewa Nyas | Enterprise Solar, Telecom, IT & Security Services — Lucknow & Deoria, UP</title>
+    <meta
+      name="description"
+      content="Rao Sewa Nyas is a registered Trust delivering enterprise-grade solar, telecom, automation, security, IT, and real estate services across Lucknow and Deoria, Uttar Pradesh. Every rupee of profit stays in UP and funds community infrastructure."
+    />
+    <meta
+      name="keywords"
+      content="Rao Sewa Nyas, solar services Lucknow, telecom services UP, IT services Deoria, security solutions Uttar Pradesh, enterprise services trust, automation services Lucknow, real estate Lucknow, non-profit trust UP, solar EPC Uttar Pradesh, CCTV installation Lucknow, e-rickshaw battery UP, community development Uttar Pradesh"
+    />
+    <meta name="author" content="Rao Sewa Nyas" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
+    <link rel="canonical" href="https://raosewanyas.org/" />
+
+    <!-- ═══════════════════ GEO META (Local SEO) ════════════════ -->
+    <meta name="geo.region" content="IN-UP" />
+    <meta name="geo.placename" content="Lucknow, Uttar Pradesh" />
+    <meta name="geo.position" content="26.8467;80.9462" />
+    <meta name="ICBM" content="26.8467, 80.9462" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- ═══════════════════ OPEN GRAPH (Facebook/LinkedIn) ══════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raosewanyas.org/" />
+    <meta property="og:title" content="Rao Sewa Nyas — Enterprise Services & Community Impact" />
+    <meta
+      property="og:description"
+      content="UP's first Trust-owned enterprise platform. Solar, telecom, automation, security, IT & real estate services across Lucknow and Deoria. Profit funds community infrastructure."
+    />
+    <meta property="og:image" content="https://raosewanyas.org/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rao Sewa Nyas — Enterprise Services Logo" />
+    <meta property="og:site_name" content="Rao Sewa Nyas" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- ═══════════════════ TWITTER CARD ════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rao Sewa Nyas — Enterprise Services & Community Impact" />
+    <meta
+      name="twitter:description"
+      content="Trust-owned enterprise platform delivering solar, telecom, automation, security, IT & real estate across Uttar Pradesh."
+    />
+    <meta name="twitter:image" content="https://raosewanyas.org/logo.png" />
+    <meta name="twitter:image:alt" content="Rao Sewa Nyas Logo" />
+
+    <!-- ═══════════════════ ICONS & MANIFEST ════════════════════ -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0C1D36" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Rao Sewa Nyas" />
+    <meta name="application-name" content="Rao Sewa Nyas" />
+    <meta name="msapplication-TileColor" content="#0C1D36" />
+
+    <!-- ═══════════════════ PRECONNECT HINTS ════════════════════ -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- ═══════════════════ DISCOVERABILITY ═════════════════════ -->
+    <link rel="search" type="application/opensearchdescription+xml" title="Rao Sewa Nyas" href="/opensearch.xml" />
+    <link rel="author" href="/humans.txt" />
+
+    <!-- ═══════════════════ VERIFICATION TAGS ═══════════════════ -->
+    <!-- Google Search Console — replace content with your actual code -->
+    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" /> -->
+    <!-- Bing Webmaster Tools — replace content with your actual code -->
+    <!-- <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" /> -->
+    <!-- Yandex Webmaster -->
+    <!-- <meta name="yandex-verification" content="YOUR_YANDEX_CODE" /> -->
+
+    <!-- ═══════════════════ STRUCTURED DATA (JSON-LD) ══════════ -->
+
+    <!-- 1. Organization + NGO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": ["Organization", "NGO"],
+      "@id": "https://raosewanyas.org/#organization",
       "name": "Rao Sewa Nyas",
+      "alternateName": "RSN",
       "url": "https://raosewanyas.org",
-      "logo": "https://raosewanyas.org/logo.png"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://raosewanyas.org/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Rao Sewa Nyas is a registered Trust in Uttar Pradesh that operates seven for-profit enterprise verticals (solar, telecom, automation, security, IT, energy, and real estate) whose profits directly fund community development initiatives across Lucknow and Deoria.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Lucknow, Uttar Pradesh, India"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Uttar Pradesh",
+          "containedInPlace": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "610/586 Keshav Nagar, Sitapur Road",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226020",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-79854-54216",
+          "contactType": "customer service",
+          "email": "raosewanyas@gmail.com",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      ],
+      "sameAs": [],
+      "knowsAbout": [
+        "Solar Energy Systems",
+        "Telecom Infrastructure",
+        "Home Automation",
+        "CCTV Security Systems",
+        "IT Services",
+        "Real Estate",
+        "Community Development",
+        "E-Rickshaw Battery Programme"
+      ]
     }
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Solar, telecom, automation, security, and IT services across Lucknow and Deoria by a registered Trust. Enterprise-grade delivery. Capital stays in UP."
-    />
-    <title>Rao Sewa Nyas | Enterprise Services Lucknow &amp; UP</title>
+
+    <!-- 2. LocalBusiness (for Google Maps / Local Pack) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://raosewanyas.org/#localbusiness",
+      "name": "Rao Sewa Nyas",
+      "image": "https://raosewanyas.org/logo.png",
+      "url": "https://raosewanyas.org",
+      "telephone": "+91-79854-54216",
+      "email": "raosewanyas@gmail.com",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "610/586 Keshav Nagar, Sitapur Road",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226020",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.8467,
+        "longitude": 80.9462
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Enterprise Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Energy Solutions", "description": "Comprehensive energy solutions including inverters and batteries for residential and commercial needs."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Solar Solutions", "description": "Advanced solar power systems and deep cycle batteries for sustainable and off-grid energy generation."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Telecom Services", "description": "Reliable telecommunication infrastructure and connectivity services for modern enterprises."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automation Services", "description": "Smart home and industrial automation systems designed for efficiency and seamless control."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Surveillance & Security Services", "description": "State of the art surveillance and security solutions to protect physical and digital assets."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "IT Enabled Services", "description": "Custom software development, digital infrastructure, and IT consulting."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real Estate Services", "description": "Verified properties across residential, commercial, and industrial sectors."}}
+        ]
+      }
+    }
+    </script>
+
+    <!-- 3. WebSite with Search Action (Sitelinks Searchbox) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://raosewanyas.org/#website",
+      "name": "Rao Sewa Nyas",
+      "url": "https://raosewanyas.org",
+      "publisher": { "@id": "https://raosewanyas.org/#organization" },
+      "inLanguage": "en-IN"
+    }
+    </script>
+
+    <!-- 4. FAQPage (for FAQ rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are your commercial services subsidized because you are a Trust?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Subsidized work produces subsidized maintenance. We charge competitive, premium market rates for our enterprise services (Solar, IT, Security, etc.). This ensures we can hire top-tier engineering talent and maintain your infrastructure for 25 years. The difference is that our profit margin is deployed into Uttar Pradesh community projects instead of corporate dividends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Dual-Engine model actually work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a closed-loop system. We bid for enterprise contracts in regions like Lucknow (GCCs) and Deoria (manufacturing). When we execute a CCTV or Solar EPC contract, the revenue covers operational costs, and the profit margin is legally mandated by our Trust deed to fund our non-profit operations (like the B.A.R.C platform or rural clinics)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we claim our invoices as CSR expenditure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Invoices for standard commercial services (e.g., wiring your factory) are standard business expenses. However, if your corporation wishes to partner with us specifically to fund a community infrastructure project, we can structure that engagement with full CSR compliance documentation and traceability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you subcontract your ground teams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We do not rely on dispatched crews from national call centers. Our engineers and technicians are based in Lucknow and Deoria. For specialized deployments, we may partner with vetted vendors through our Partner Portal, but Rao Sewa Nyas maintains strict oversight and single-point accountability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I become a vendor or partner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can apply through our Partner Portal. We require verifiable operational history, GST details, and relevant compliance certifications (e.g., UPNEDA empanelment for solar contractors). We evaluate on technical merit, not lowest-bidder dynamics."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- 5. BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://raosewanyas.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Enterprise Services", "item": "https://raosewanyas.org/operations/for-profit" },
+        { "@type": "ListItem", "position": 3, "name": "Community Initiatives", "item": "https://raosewanyas.org/operations/non-profit" },
+        { "@type": "ListItem", "position": 4, "name": "Portfolio", "item": "https://raosewanyas.org/portfolio" },
+        { "@type": "ListItem", "position": 5, "name": "Contact", "item": "https://raosewanyas.org/contact" }
+      ]
+    }
+    </script>
+
   </head>
   <body class="select-none">
     <div id="root"></div>

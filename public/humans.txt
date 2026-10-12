@@ -1,0 +1,16 @@
+# humanstxt.org
+# Rao Sewa Nyas — https://raosewanyas.org
+
+/* TEAM */
+Organization: Rao Sewa Nyas
+Location: Lucknow, Uttar Pradesh, India
+Contact: raosewanyas@gmail.com
+Phone: +91 79854 54216
+
+/* SITE */
+Last update: 2026-10-12
+Language: English
+Doctype: HTML5
+Framework: React 19 + Vite
+Styling: Tailwind CSS v4
+Hosting: Vercel
