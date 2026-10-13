@@ -100,6 +100,7 @@ export function Footer() {
               </a>
             </p>
           </div>
+        </div>
       </div>
 
       {/* ── Full-width typographic accent — outside max-w-7xl so it spans the viewport ── */}
