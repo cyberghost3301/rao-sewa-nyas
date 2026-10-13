@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { to: "/about", label: "About" },
@@ -28,27 +28,25 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="fixed left-0 right-0 z-50 mx-auto transition-all duration-300 ease-in-out top-4 max-w-6xl rounded-full border border-white/40 bg-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl"
+      className={`fixed left-0 right-0 z-50 mx-auto transition-all duration-300 ease-in-out top-4 max-w-6xl border border-white/40 bg-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl ${
+        open ? "rounded-3xl" : "rounded-full"
+      }`}
     >
-      <div className="mx-auto flex items-center justify-between transition-all duration-300 h-16 px-6">
-        <Link to="/" className="hidden items-center gap-3 font-display text-lg font-bold md:flex">
+      {/* ── Top bar ─────────────────────────────────────── */}
+      <div className="flex items-center h-16 px-6">
+
+        {/* ── Logo (always visible) ───────────────────── */}
+        <Link to="/" className="flex items-center gap-3 font-display font-bold shrink-0">
           <img
             src="/logo.png"
             alt="Rao Sewa Nyas logo"
-            className="h-10 w-auto object-contain drop-shadow-sm"
+            className="h-10 w-auto object-contain drop-shadow-sm md:h-10 h-9"
           />
-          <span className="text-india-navy">Rao Sewa Nyas</span>
-        </Link>
-        <Link to="/" className="flex items-center gap-3 font-display text-base font-bold md:hidden">
-          <img
-            src="/logo.png"
-            alt="Rao Sewa Nyas logo"
-            className="h-9 w-auto object-contain drop-shadow-sm"
-          />
-          <span className="text-india-navy">Rao Sewa Nyas</span>
+          <span className="text-india-navy text-base md:text-lg">Rao Sewa Nyas</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        {/* ── Desktop nav (centred) ───────────────────── */}
+        <nav className="hidden md:flex flex-1 items-center justify-center gap-1">
           <DropdownMenu>
             <DropdownMenuTrigger className="inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-india-navy outline-none transition-colors hover:bg-secondary">
               Operations <ChevronDown className="h-4 w-4" />
@@ -80,43 +78,41 @@ export function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <NavLink
-            to="/donations"
-            className={({ isActive }) =>
+        </nav>
+
+        {/* ── Donate (desktop, pinned right) ─────────── */}
+        <NavLink
+          to="/donations"
+          className={({ isActive }) =>
+            `hidden md:inline-flex shrink-0 ${
               isActive
                 ? "rounded-full bg-saffron/80 px-4 py-2 text-sm font-semibold text-white shadow"
                 : "rounded-full bg-saffron px-4 py-2 text-sm font-semibold text-white shadow transition-all hover:-translate-y-0.5 hover:shadow-md"
-            }
-          >
-            Donate
-          </NavLink>
-        </nav>
+            }`
+          }
+        >
+          Donate
+        </NavLink>
 
+        {/* ── Hamburger (mobile only) ─────────────────── */}
         <button
-          className="rounded-md p-2 text-india-navy md:hidden"
-          onClick={() => setOpen((value) => !value)}
+          className="ml-auto rounded-md p-2 text-india-navy md:hidden"
+          onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
+      {/* ── Mobile drawer ───────────────────────────────── */}
       {open && (
-        <div className="border-t border-white/40 bg-white/90 backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/40 bg-white/90 backdrop-blur-xl md:hidden rounded-b-3xl overflow-hidden">
           <div className="space-y-1 px-4 py-3">
-            <div className="mb-2 border-b border-border/60 pb-3">
-              <Link to="/" onClick={() => setOpen(false)} className="inline-flex items-center gap-3">
-                <img
-                  src="/logo.png"
-                  alt="Rao Sewa Nyas logo"
-                  className="h-10 w-auto object-contain drop-shadow-sm"
-                />
-                <span className="font-display text-base font-semibold text-india-navy">
-                  Rao Sewa Nyas
-                </span>
-              </Link>
+
+            {/* Operations section */}
+            <div className="px-2 pb-1 pt-2 text-xs font-semibold uppercase text-muted-foreground">
+              Operations
             </div>
-            <div className="px-2 pb-1 pt-2 text-xs font-semibold uppercase text-muted-foreground">Operations</div>
             <Link
               to="/operations/for-profit"
               onClick={() => setOpen(false)}
@@ -131,7 +127,11 @@ export function Navbar() {
             >
               Non-profit
             </Link>
+
+            {/* Separator */}
             <div className="my-2 h-px bg-border" />
+
+            {/* Nav links */}
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -142,10 +142,15 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Separator before Donate */}
+            <div className="my-2 h-px bg-border" />
+
+            {/* Donate button */}
             <Link
               to="/donations"
               onClick={() => setOpen(false)}
-              className="block rounded-full bg-saffron px-4 py-2.5 text-center text-sm font-semibold text-white shadow mt-2"
+              className="block rounded-full bg-saffron px-4 py-2.5 text-center text-sm font-semibold text-white shadow mt-2 mb-1"
             >
               Donate
             </Link>
