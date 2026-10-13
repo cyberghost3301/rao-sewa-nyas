@@ -28,7 +28,7 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className={`fixed left-0 right-0 z-50 mx-auto transition-all duration-300 ease-in-out top-4 max-w-6xl border border-white/40 bg-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl ${
+      className={`fixed left-0 right-0 z-50 mx-auto transition-[box-shadow,background-color] duration-300 ease-in-out top-4 max-w-6xl border border-white/40 bg-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] backdrop-blur-2xl ${
         open ? "rounded-3xl" : "rounded-full"
       }`}
     >

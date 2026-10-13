@@ -73,8 +73,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Massive Typographic Base */}
-        <div className="mt-16 border-t border-border/50 pb-12 pt-8">
+        {/* Copyright & credit */}
+        <div className="mt-16 border-t border-border/50 pb-4 pt-8">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Rao Sewa Nyas. A Registered Trust operating in Uttar Pradesh.
@@ -100,13 +100,13 @@ export function Footer() {
               </a>
             </p>
           </div>
+      </div>
 
-          <div className="mt-8 w-full pointer-events-none flex justify-center overflow-visible">
-            <h1 className="text-center font-display text-[7vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] select-none whitespace-nowrap">
-              RAO SEWA NYAS
-            </h1>
-          </div>
-        </div>
+      {/* ── Full-width typographic accent — outside max-w-7xl so it spans the viewport ── */}
+      <div className="w-full pointer-events-none select-none flex justify-center overflow-hidden pb-6 pt-2">
+        <span className="font-display text-[14vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] whitespace-nowrap">
+          RAO SEWA NYAS
+        </span>
       </div>
     </footer>
   );
