@@ -1,12 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.raosewanyas.org" }],
-      "destination": "https://raosewanyas.org/$1",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
