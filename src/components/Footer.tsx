@@ -105,7 +105,7 @@ export function Footer() {
 
       {/* ── Full-width typographic accent — outside max-w-7xl so it spans the viewport ── */}
       <div className="w-full pointer-events-none select-none flex justify-center overflow-hidden pb-6 pt-2">
-        <span className="font-display text-[14vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] whitespace-nowrap">
+        <span className="font-display text-[13.5vw] font-bold leading-none tracking-tighter text-india-navy/[0.03] whitespace-nowrap">
           RAO SEWA NYAS
         </span>
       </div>
