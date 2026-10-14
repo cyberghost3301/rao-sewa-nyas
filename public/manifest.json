@@ -1,5 +1,5 @@
 {
-  "name": "Rao Sewa Nyas — Enterprise Services & Community Impact",
+  "name": "Rao Sewa Nyas - Enterprise Services & Community Impact",
   "short_name": "Rao Sewa Nyas",
   "description": "Trust-owned enterprise platform delivering solar, telecom, automation, security, IT, and real estate services across Lucknow and Deoria, Uttar Pradesh. Every rupee of profit funds community infrastructure.",
   "start_url": "/",
@@ -8,7 +8,11 @@
   "theme_color": "#0C1D36",
   "orientation": "portrait-primary",
   "lang": "en-IN",
-  "categories": ["business", "nonprofit", "services"],
+  "categories": [
+    "business",
+    "nonprofit",
+    "services"
+  ],
   "icons": [
     {
       "src": "/favicon.svg",

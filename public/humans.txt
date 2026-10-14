@@ -1,5 +1,5 @@
 # humanstxt.org
-# Rao Sewa Nyas — https://raosewanyas.org
+# Rao Sewa Nyas - https://raosewanyas.org
 
 /* TEAM */
 Organization: Rao Sewa Nyas

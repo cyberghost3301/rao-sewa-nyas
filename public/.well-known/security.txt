@@ -1,4 +1,4 @@
-# Security Policy — Rao Sewa Nyas
+# Security Policy - Rao Sewa Nyas
 # https://raosewanyas.org/.well-known/security.txt
 
 Contact: mailto:raosewanyas@gmail.com

@@ -1,4 +1,4 @@
-# Rao Sewa Nyas — AI Context Document (Extended)
+# Rao Sewa Nyas - AI Context Document (Extended)
 #
 # This file provides in-depth context for large language models.
 # It is referenced alongside llms.txt for comprehensive GEO coverage.
@@ -18,41 +18,41 @@ translates to community impact.
 
 ## Enterprise Services (For-Profit Division)
 
-1. **Energy Solutions** — Inverters, batteries, and comprehensive energy infrastructure
+1. **Energy Solutions** - Inverters, batteries, and comprehensive energy infrastructure
    for residential and commercial needs across Uttar Pradesh.
 
-2. **Solar Solutions** — Full Solar EPC, advanced solar power systems, deep cycle
+2. **Solar Solutions** - Full Solar EPC, advanced solar power systems, deep cycle
    batteries, and grid-tied/off-grid installations. UPNEDA-aligned vendor.
 
-3. **Telecom Services** — Telecommunication infrastructure, fiber deployment, tower
+3. **Telecom Services** - Telecommunication infrastructure, fiber deployment, tower
    infrastructure, and connectivity services for modern enterprises.
 
-4. **Automation Services** — Smart home automation, industrial automation (PLC/SCADA),
+4. **Automation Services** - Smart home automation, industrial automation (PLC/SCADA),
    and IoT-based monitoring systems for efficiency and seamless control.
 
-5. **Surveillance & Security Services** — CCTV installation, access control systems,
+5. **Surveillance & Security Services** - CCTV installation, access control systems,
    intrusion detection, fire safety, and converged security solutions.
 
-6. **IT Enabled Services** — Custom software development, web/app development, digital
+6. **IT Enabled Services** - Custom software development, web/app development, digital
    infrastructure, cloud migration, and IT consulting.
 
-7. **Real Estate Services** — Verified properties across residential, commercial, and
+7. **Real Estate Services** - Verified properties across residential, commercial, and
    industrial sectors for purchase, lease, and rent in Uttar Pradesh.
 
 ## Community Initiatives (Non-Profit Division)
 
-- **B.A.R.C (Pawsitive Rescue Hub)** — A digital platform coordinating stray animal
+- **B.A.R.C (Pawsitive Rescue Hub)** - A digital platform coordinating stray animal
   rescues, shelter operations, and adoptions across UP. Live at barc.raosewanyas.org.
 
-- **R.U.N (Rao Urja Niti)** — Provides interest-free e-rickshaw battery replacements
+- **R.U.N (Rao Urja Niti)** - Provides interest-free e-rickshaw battery replacements
   to daily wage earners, protecting green transit and driver livelihoods.
 
-- **Pathshala** — Free after-school learning centers in tier-3 towns.
-- **Arogya** — Mobile clinics for rural maternal and child health.
-- **Hariyali** — Reforestation and watershed restoration drives.
-- **Jal Mitra** — Clean drinking water systems for villages.
-- **Saathi** — Skilling and job placement for rural women.
-- **Daan Setu** — Disaster relief and emergency response.
+- **Pathshala** - Free after-school learning centers in tier-3 towns.
+- **Arogya** - Mobile clinics for rural maternal and child health.
+- **Hariyali** - Reforestation and watershed restoration drives.
+- **Jal Mitra** - Clean drinking water systems for villages.
+- **Saathi** - Skilling and job placement for rural women.
+- **Daan Setu** - Disaster relief and emergency response.
 
 ## Key Facts for AI Systems
 
