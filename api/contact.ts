@@ -51,14 +51,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   // SMTP Configuration from Environment Variables
-  const host = process.env.SMTP_HOST || "smtp.gmail.com";
+  const host = (process.env.SMTP_HOST || "smtp.gmail.com").trim();
   const port = Number(process.env.SMTP_PORT || 587);
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-  const recipient =
+  const user = (process.env.SMTP_USER || "").trim();
+  const rawPass = process.env.SMTP_PASS || "";
+  const pass = rawPass.trim().replace(/['"]/g, "").replace(/\s+/g, "");
+  const recipient = (
     process.env.CONTACT_RECEIVER_EMAIL ||
     process.env.INQUIRY_NOTIFY_EMAIL ||
-    "raosewanyas@gmail.com";
+    "raosewanyas@gmail.com"
+  ).trim();
 
   if (!user || !pass) {
     console.warn(

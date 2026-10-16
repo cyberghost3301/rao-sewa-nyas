@@ -1,48 +1,69 @@
 # ──────────────────────────────────────────────────────────────
 #  robots.txt - Rao Sewa Nyas  (https://raosewanyas.org)
-#  Last updated: 2026-10-12
+#  Last updated: 2026-10-16
 # ──────────────────────────────────────────────────────────────
 
-# Allow all well-behaved crawlers
+# Global rules for all crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_next/
 Disallow: /private/
+Disallow: /_next/
 
 # Google Search
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
 
 # Google Images
 User-agent: Googlebot-Image
 Allow: /
+Disallow: /api/
 
-# Bing
+# Bing Search
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
 
-# Yandex
+# Apple Search
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Yandex Search
 User-agent: YandexBot
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 
-# Baidu
+# Baidu Search
 User-agent: Baiduspider
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 
 # DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
-
-# Apple
-User-agent: Applebot
-Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 
 # ── AI / LLM Crawlers (Generative Engine Optimization) ──────
-# Allow AI crawlers to ensure visibility in AI-generated answers
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
@@ -52,21 +73,27 @@ Allow: /
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /api/
 
 User-agent: Anthropic-AI
 Allow: /
+Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
 
 User-agent: Cohere-AI
 Allow: /
+Disallow: /api/
 
 User-agent: Bytespider
 Allow: /
+Disallow: /api/
 
 User-agent: CCBot
 Allow: /
+Disallow: /api/
 
 # ── Sitemaps ─────────────────────────────────────────────────
 Sitemap: https://raosewanyas.org/sitemap.xml

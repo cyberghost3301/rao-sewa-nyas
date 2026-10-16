@@ -16,8 +16,20 @@
   <meta name="author" content="Rao Sewa Nyas" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="bingbot" content="index, follow" />
-  <link rel="canonical" href="https://raosewanyas.org/" />
+  <link rel="canonical" href="https://raosewanyas.org/" id="canonical-tag" />
+  <script>
+    (function() {
+      try {
+        var p = window.location.pathname || "/";
+        if (p.length > 1 && p.endsWith("/")) { p = p.slice(0, -1); }
+        var c = "https://raosewanyas.org" + (p === "/" ? "/" : p);
+        var tag = document.getElementById("canonical-tag") || document.querySelector('link[rel="canonical"]');
+        if (tag) {
+          tag.setAttribute("href", c);
+        }
+      } catch (e) {}
+    })();
+  </script>
 
   <!-- ═══════════════════ GEO META (Local SEO) ════════════════ -->
   <meta name="geo.region" content="IN-UP" />

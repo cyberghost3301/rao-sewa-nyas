@@ -6,6 +6,7 @@ import Lenis from "lenis";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { RouteSEO } from "@/components/RouteSEO";
 import { PageWrapper } from "@/components/PageWrapper";
 
 import Home from "@/pages/Home";
@@ -85,6 +86,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <RouteSEO />
       <div className="min-h-screen bg-india-gradient flex flex-col selection:bg-saffron/20 selection:text-saffron">
         <Navbar />
         <main className="flex-1 flex flex-col pt-4">
