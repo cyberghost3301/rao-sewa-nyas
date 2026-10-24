@@ -23,6 +23,7 @@ import Contact from "@/pages/Contact";
 import Credentials from "@/pages/Credentials";
 import Donations from "@/pages/Donations";
 import RunInitiative from "@/pages/RunInitiative";
+import SocialProfiles from "@/pages/SocialProfiles";
 
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -70,6 +71,8 @@ function AnimatedRoutes() {
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/credentials" element={<PageWrapper><Credentials /></PageWrapper>} />
         <Route path="/donations" element={<PageWrapper><Donations /></PageWrapper>} />
+        <Route path="/social" element={<PageWrapper><SocialProfiles /></PageWrapper>} />
+        <Route path="/channels" element={<PageWrapper><SocialProfiles /></PageWrapper>} />
         
         {/* Legal & Compliance Pages */}
         <Route path="/privacy" element={<PageWrapper><Privacy /></PageWrapper>} />

@@ -108,6 +108,20 @@ const ROUTE_META: Record<string, PageMeta> = {
       "Get in touch with our commercial and operational divisions in Lucknow and Deoria. Fast direct access to engineers and project managers.",
     canonical: `${BASE_URL}/contact`,
   },
+  "/social": {
+    title:
+      "Official Social Channels & Live Desks | @raosewanyas - Rao Sewa Nyas",
+    description:
+      "Verified digital channels, media feeds, WhatsApp instant desk, and official communications for Rao Sewa Nyas across Lucknow and Deoria, Uttar Pradesh.",
+    canonical: `${BASE_URL}/social`,
+  },
+  "/channels": {
+    title:
+      "Official Social Channels & Live Desks | @raosewanyas - Rao Sewa Nyas",
+    description:
+      "Verified digital channels, media feeds, WhatsApp instant desk, and official communications for Rao Sewa Nyas across Lucknow and Deoria, Uttar Pradesh.",
+    canonical: `${BASE_URL}/social`,
+  },
   "/privacy": {
     title: "Privacy Policy | Data Protection & Governance - Rao Sewa Nyas",
     description:

@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { motion } from "framer-motion";
+import { SocialLinks } from "@/components/SocialLinks";
 
 const navLinks = [
   { to: "/about", label: "About" },
@@ -150,10 +151,18 @@ export function Navbar() {
             <Link
               to="/donations"
               onClick={() => setOpen(false)}
-              className="block rounded-full bg-saffron px-4 py-2.5 text-center text-sm font-semibold text-white shadow mt-2 mb-1"
+              className="block rounded-full bg-saffron px-4 py-2.5 text-center text-sm font-semibold text-white shadow mt-2 mb-2"
             >
               Donate
             </Link>
+
+            {/* Direct Connect & Verified Social Profiles */}
+            <div className="pt-3 pb-1 border-t border-border/40 flex items-center justify-between px-1">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Follow Us
+              </span>
+              <SocialLinks variant="compact" />
+            </div>
           </div>
         </div>
       )}
