@@ -311,7 +311,7 @@ export default function SocialProfiles() {
             </div>
             <div className="rounded-xl border border-india-navy/5 bg-slate-50/60 p-2.5">
               <span className="block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Clean Energy</span>
-              <span className="font-semibold text-xs text-india-navy">UPNEDA EPC Partner</span>
+              <span className="font-semibold text-xs text-india-navy">UPNEDA EPC (Soon)</span>
             </div>
             <div className="rounded-xl border border-india-navy/5 bg-slate-50/60 p-2.5">
               <span className="block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Tax Status</span>
@@ -326,8 +326,8 @@ export default function SocialProfiles() {
             <button
               onClick={() => setActiveTab("all")}
               className={`rounded-xl px-4 py-2 text-xs font-bold transition-all duration-150 ${activeTab === "all"
-                  ? "bg-india-navy text-white shadow-sm"
-                  : "text-muted-foreground hover:text-india-navy"
+                ? "bg-india-navy text-white shadow-sm"
+                : "text-muted-foreground hover:text-india-navy"
                 }`}
             >
               All Channels ({SOCIAL_PROFILES.length})
@@ -335,8 +335,8 @@ export default function SocialProfiles() {
             <button
               onClick={() => setActiveTab("desks")}
               className={`rounded-xl px-4 py-2 text-xs font-bold transition-all duration-150 ${activeTab === "desks"
-                  ? "bg-india-navy text-white shadow-sm"
-                  : "text-muted-foreground hover:text-india-navy"
+                ? "bg-india-navy text-white shadow-sm"
+                : "text-muted-foreground hover:text-india-navy"
                 }`}
             >
               Direct Live Desks (3)
@@ -344,8 +344,8 @@ export default function SocialProfiles() {
             <button
               onClick={() => setActiveTab("feeds")}
               className={`rounded-xl px-4 py-2 text-xs font-bold transition-all duration-150 ${activeTab === "feeds"
-                  ? "bg-india-navy text-white shadow-sm"
-                  : "text-muted-foreground hover:text-india-navy"
+                ? "bg-india-navy text-white shadow-sm"
+                : "text-muted-foreground hover:text-india-navy"
                 }`}
             >
               Social Media Feeds ({socialFeedProfiles.length})
@@ -629,7 +629,7 @@ export default function SocialProfiles() {
                 Official Verification &amp; Security Protocol
               </h4>
               <p className="mt-1 text-xs leading-relaxed text-amber-800">
-                Always ensure you are communicating through our verified handle <strong>@raosewanyas</strong>. Rao Sewa Nyas will never ask for bank account PINs, OTPs, or unsolicited cash transfers via social media direct messages. All official donor receipts are issued under registered Section 80G documentation.
+                Always ensure you are communicating through our verified handle <strong>@raosewanyas</strong>. Rao Sewa Nyas will never ask for bank account PINs, OTPs, or unsolicited cash transfers via social media direct messages.
               </p>
             </div>
           </div>

@@ -611,7 +611,7 @@ function Contact() {
                   </>
                 ) : (
                   <>
-                    Request Technical Consultation
+                    Submit
                     <Send className="ml-1 h-4 w-4" />
                   </>
                 )}

@@ -64,7 +64,7 @@ export const SOCIAL_PROFILES: SocialChannel[] = [
   },
   {
     name: "Facebook",
-    handle: "raosewanyas",
+    handle: "@raosewanyas",
     url: "https://www.facebook.com/raosewanyas/",
     ariaLabel: "Visit Rao Sewa Nyas on Facebook",
     category: "social",
