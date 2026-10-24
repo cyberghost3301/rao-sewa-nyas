@@ -162,7 +162,7 @@ export function Footer() {
             </div> */}
 
             {/* Developer credit */}
-            <p className="font-body text-[11px] text-[#8c5a6d] text-center md:text-right">
+            {/*<p className="font-body text-[11px] text-[#8c5a6d] text-center md:text-right">
               Crafted by{" "}
               <a
                 href="https://spirecrest.in/"
@@ -175,7 +175,7 @@ export function Footer() {
                 </span>
                 Spirecrest Solutions
               </a>
-            </p>
+            </p>*/}
           </div>
         </div>
       </div>
