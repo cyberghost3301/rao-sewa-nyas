@@ -50,9 +50,12 @@ const serviceOptions = [
   "Solar Solutions",
   "Telecom Services",
   "Automation Services",
-  "Security Services",
+  "Surveillance & Security Services",
   "IT Enabled Services",
   "Real Estate Services",
+  "E2E Data Collection & Analysis",
+  "Managed 360 Marketing & Sales",
+  "Campaign Design & Management",
   "Other (Type Below)",
 ];
 

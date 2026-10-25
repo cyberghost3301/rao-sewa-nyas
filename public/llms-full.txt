@@ -7,7 +7,7 @@
 
 Rao Sewa Nyas is Uttar Pradesh's first Trust-owned enterprise platform. Founded with
 the principle that sustainable community impact cannot rely on donations alone, it
-established seven independent for-profit verticals that compete on technical merit,
+established ten independent for-profit verticals that compete on technical merit,
 charge market rates, and deliver enterprise-grade work.
 
 The Trust operates under a **Dual-Engine Model**: enterprise revenue covers operational
@@ -38,6 +38,15 @@ translates to community impact.
 
 7. **Real Estate Services** - Verified properties across residential, commercial, and
    industrial sectors for purchase, lease, and rent in Uttar Pradesh.
+
+8. **E2E Data Collection & Analysis** - Field surveying, sensor telemetry ingestion,
+   automated data pipelines, and predictive business intelligence across UP.
+
+9. **Managed 360 Marketing & Sales** - Full-funnel digital and offline campaigns, B2B lead
+   generation pipelines, outreach execution, and commercial revenue acceleration.
+
+10. **Campaign Design & Management** - End-to-end creative strategy, multi-platform media
+    operations, public communications, and lifecycle performance tracking.
 
 ## Community Initiatives (Non-Profit Division)
 

@@ -51,13 +51,13 @@ function ForProfit() {
           Operations -- For-profit
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-india-navy drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] sm:text-5xl lg:text-6xl">
-          Seven Services. One Standard.{" "}
+          Ten Services. One Standard.{" "}
           <span className="text-india-gradient">Zero Compartmentalization.</span>
         </h1>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg">
           Our for-profit verticals run on a unified delivery model. You get the
           same engineering discipline whether you need a solar microgrid in
-          Deoria or a converged security system for a GCC in Lucknow.
+          Deoria, an analytics pipeline, or a converged security system for a GCC in Lucknow.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
@@ -75,7 +75,7 @@ function ForProfit() {
         </div>
       </motion.div>
 
-      {/* -- Service Cards (existing 6) -------------------------- */}
+      {/* -- Service Cards (10 Verticals) ------------------------ */}
       <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <ServiceCard key={service.name} service={service} index={index} />
@@ -91,7 +91,7 @@ function ForProfit() {
           className="mb-8 max-w-2xl"
         >
           <h2 className="text-2xl font-semibold text-india-navy sm:text-3xl">
-            Why Clients Use One Vendor Across All Seven
+            Why Clients Use One Vendor Across All Ten
           </h2>
         </motion.div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

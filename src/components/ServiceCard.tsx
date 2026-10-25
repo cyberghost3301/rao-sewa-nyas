@@ -4,9 +4,12 @@ import { ArrowUpRight } from "lucide-react";
 
 export function ServiceCard({ service, index }: { service: Service; index: number }) {
   const Icon = service.icon;
+  const isExternal = service.url.startsWith("http");
   return (
     <motion.a
       href={service.url}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: 1,

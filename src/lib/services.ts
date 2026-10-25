@@ -1,4 +1,15 @@
-import { Cpu, Monitor, Radio, ShieldCheck, Sun, Zap, Building2 } from "lucide-react";
+import {
+  Cpu,
+  Monitor,
+  Radio,
+  ShieldCheck,
+  Sun,
+  Zap,
+  Building2,
+  BarChart3,
+  TrendingUp,
+  Megaphone,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Service = {
@@ -65,5 +76,29 @@ export const services: Service[] = [
     url: "https://res.raosewanyas.org/",
     icon: Building2,
     accent: "from-sky-400 to-blue-600",
+  },
+  {
+    name: "E2E Data Collection & Analysis",
+    tagline:
+      "Field surveying, IoT telemetry ingestion, automated data pipelines, and predictive analytical intelligence.",
+    url: "https://dss.raosewanyas.org/",
+    icon: BarChart3,
+    accent: "from-indigo-500 to-blue-600",
+  },
+  {
+    name: "Managed 360 Marketing & Sales",
+    tagline:
+      "Full-funnel digital presence, enterprise lead generation pipelines, outreach execution, and commercial revenue acceleration.",
+    url: "https://ms.raosewanyas.org/",
+    icon: TrendingUp,
+    accent: "from-fuchsia-500 to-rose-600",
+  },
+  {
+    name: "Campaign Design & Management",
+    tagline:
+      "End-to-end creative concept development, multi-platform ad operations, public communications, and lifecycle tracking.",
+    url: "https://cdm.raosewanyas.org/",
+    icon: Megaphone,
+    accent: "from-teal-500 to-emerald-600",
   },
 ];

@@ -14,21 +14,21 @@ const ROUTE_META: Record<string, PageMeta> = {
     title:
       "Rao Sewa Nyas | Enterprise Solar, Telecom, IT & Security Services - Lucknow & Deoria, UP",
     description:
-      "Rao Sewa Nyas is a registered Trust delivering enterprise-grade solar, telecom, automation, security, IT, and real estate services across Lucknow and Deoria, Uttar Pradesh.",
+      "Rao Sewa Nyas is a registered Trust delivering enterprise-grade solar, telecom, automation, security, IT, marketing, data, and real estate services across Lucknow and Deoria, Uttar Pradesh.",
     canonical: `${BASE_URL}/`,
   },
   "/about": {
     title:
       "About Us | Philosophy of Self-Funded Philanthropy - Rao Sewa Nyas",
     description:
-      "Learn about Rao Sewa Nyas - a self-funded philanthropic Trust combining enterprise excellence in solar, telecom, and IT with sustainable community impact across UP.",
+      "Learn about Rao Sewa Nyas - a self-funded philanthropic Trust combining enterprise excellence in solar, telecom, IT, data, and marketing with sustainable community impact across UP.",
     canonical: `${BASE_URL}/about`,
   },
   "/operations/for-profit": {
     title:
       "Commercial Enterprise Verticals | Solar, Telecom & IT - Rao Sewa Nyas",
     description:
-      "Explore our seven enterprise divisions: Solar EPC, Telecom Infrastructure, Automation, Security Systems, IT-Enabled Services, and Real Estate across Uttar Pradesh.",
+      "Explore our ten enterprise divisions: Solar EPC, Telecom Infrastructure, Automation, Security Systems, IT-Enabled Services, Real Estate, E2E Data Analysis, 360 Marketing, and Campaign Management across Uttar Pradesh.",
     canonical: `${BASE_URL}/operations/for-profit`,
   },
   "/operations/non-profit": {

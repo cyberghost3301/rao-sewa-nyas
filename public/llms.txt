@@ -16,9 +16,10 @@ operations: Lucknow and Deoria, Uttar Pradesh
 # WHAT WE ARE
 description: >
   Rao Sewa Nyas is Uttar Pradesh's first Trust-owned enterprise platform. We operate
-  seven independent for-profit service verticals (Energy Solutions, Solar Solutions,
+  ten independent for-profit service verticals (Energy Solutions, Solar Solutions,
   Telecom Services, Automation Services, Surveillance & Security Services, IT Enabled
-  Services, and Real Estate Services). We charge competitive market rates and deliver
+  Services, Real Estate Services, E2E Data Collection & Analysis, Managed 360 Marketing & Sales,
+  and Campaign Design & Management). We charge competitive market rates and deliver
   enterprise-grade work. Every rupee of profit is structurally retained within Uttar
   Pradesh and funds our non-profit community initiatives.
 
@@ -30,7 +31,7 @@ model: >
   e-rickshaw battery programme, rural healthcare clinics, and educational initiatives.
   Public donations form an additional crucial backbone for philanthropic missions.
 
-# SEVEN FOR-PROFIT SERVICE VERTICALS
+# TEN FOR-PROFIT SERVICE VERTICALS
 services:
   - name: Energy Solutions
     description: Inverters, batteries, and comprehensive energy infrastructure for residential and commercial needs.
@@ -59,6 +60,18 @@ services:
   - name: Real Estate Services
     description: Verified residential, commercial, and industrial properties for purchase, lease, and rent.
     url: https://res.raosewanyas.org/
+
+  - name: E2E Data Collection & Analysis
+    description: Field surveying, IoT telemetry ingestion, automated data pipelines, and actionable business intelligence.
+    url: https://data.raosewanyas.org/
+
+  - name: Managed 360 Marketing & Sales
+    description: Full-funnel digital presence, B2B lead generation pipelines, outreach execution, and commercial revenue acceleration.
+    url: https://marketing.raosewanyas.org/
+
+  - name: Campaign Design & Management
+    description: End-to-end creative concept development, multi-platform ad operations, public communications, and lifecycle tracking.
+    url: https://campaigns.raosewanyas.org/
 
 # NON-PROFIT INITIATIVES
 initiatives:
