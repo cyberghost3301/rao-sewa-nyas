@@ -24,7 +24,7 @@ import { SOCIAL_PROFILES } from "@/components/SocialLinks";
 // Feed post data structures
 interface SocialFeedPost {
   id: string;
-  platform: "instagram" | "facebook" | "threads" | "x";
+  platform: "instagram" | "facebook" | "threads" | "x" | "youtube";
   tag: string;
   date: string;
   title: string;
@@ -38,6 +38,20 @@ interface SocialFeedPost {
 }
 
 const FEED_POSTS: SocialFeedPost[] = [
+  {
+    id: "yt-documentary",
+    platform: "youtube",
+    tag: "Field Documentary",
+    date: "Video Feature",
+    title: "Powering Purvanchal: Inside Our Solar EPC & Microgrid Operations",
+    content:
+      "Watch the comprehensive documentary on our off-grid solar microgrid implementations, battery energy storage systems, and community impact across eastern Uttar Pradesh.",
+    engagement: {
+      likes: "580",
+      comments: "46",
+    },
+    link: "https://www.youtube.com/@raosewanyas",
+  },
   {
     id: "ig-solar",
     platform: "instagram",
@@ -339,7 +353,7 @@ export default function SocialProfiles() {
                 : "text-muted-foreground hover:text-india-navy"
                 }`}
             >
-              Direct Live Desks (3)
+              Direct Desks (3)
             </button>
             <button
               onClick={() => setActiveTab("feeds")}
@@ -490,7 +504,7 @@ export default function SocialProfiles() {
             </div>
 
             {/* Social Platform Profiles Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
               {socialFeedProfiles.map((channel) => {
                 const Icon = channel.icon;
                 return (

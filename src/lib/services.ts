@@ -54,7 +54,7 @@ export const services: Service[] = [
     accent: "from-violet-400 to-indigo-600",
   },
   {
-    name: "Surveilance & Security Services",
+    name: "Surveillance & Security Services",
     tagline:
       "State of the art surveillance and security solutions to protect your physical and digital assets.",
     url: "https://sss.raosewanyas.org/",

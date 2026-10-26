@@ -343,9 +343,8 @@ function Contact() {
                   Instant Messaging & Official Channels
                 </h3>
               </div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 border border-emerald-200/70 px-2.5 py-1 text-xs font-medium text-emerald-700">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Live Desk
+              <span className="inline-flex items-center rounded-full bg-slate-100 border border-slate-200/80 px-2.5 py-1 text-xs font-medium text-slate-700">
+                Direct Desk
               </span>
             </div>
 

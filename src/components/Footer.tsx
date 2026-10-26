@@ -106,34 +106,33 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Official Channels / Live Desk Banner (Placed below navigation links on desktop) */}
-            <div className="mt-10 rounded-2xl border border-india-navy/10 bg-white/70 p-5 backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.03)] transition-all hover:border-india-navy/20">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2.5">
+            {/* ── Official Social & Media Networks ───────────── */}
+            <div className="mt-12 pt-7 border-t border-border/40">
+              <div className="flex flex-col gap-3.5">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <div className="flex items-center gap-2">
                     <span className="font-display text-xs font-bold uppercase tracking-wider text-india-navy">
-                      Official Channels
+                      Official Networks
                     </span>
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/80 bg-emerald-50 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-700 shadow-sm">
-                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                      Live Desk
+                    <span className="text-muted-foreground/30">•</span>
+                    <span className="font-mono text-xs text-muted-foreground">
+                      @raosewanyas
                     </span>
                   </div>
-                  <p className="text-xs text-muted-foreground">
-                    Connect directly with our desk or explore our verified social media feeds.
-                  </p>
-                </div>
 
-                <div className="flex flex-wrap items-center gap-3">
-                  <SocialLinks variant="footer" />
                   <Link
                     to="/social"
-                    className="inline-flex items-center gap-1.5 rounded-xl border border-saffron/30 bg-saffron/10 px-3.5 py-2 text-xs font-bold text-saffron transition-all duration-200 hover:bg-saffron hover:text-white hover:shadow-md active:translate-y-0.5"
-                    aria-label="Visit dedicated Social Profiles and Media Feeds page"
+                    className="group inline-flex items-center gap-1.5 text-xs font-semibold text-saffron transition-colors hover:text-india-navy w-fit"
+                    aria-label="Visit dedicated Social Channels and Media Feeds directory"
                   >
-                    <span>Channels Hub</span>
-                    <ArrowUpRight className="h-3.5 w-3.5" />
+                    <span>Channels Directory</span>
+                    <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
+                </div>
+
+                {/* Branded Social Chips: WhatsApp, YouTube, Instagram, Facebook, X, Threads */}
+                <div className="flex flex-wrap items-center gap-2 pt-0.5">
+                  <SocialLinks variant="chips" />
                 </div>
               </div>
             </div>
