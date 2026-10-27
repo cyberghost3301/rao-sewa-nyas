@@ -19,26 +19,26 @@ const BASE_URL = 'https://raosewanyas.org';
 const ROUTES = [
   {
     path: '/',
-    title: 'Rao Sewa Nyas | Enterprise Solar, Telecom, IT & Security Services - Lucknow & Deoria, UP',
-    description: 'Rao Sewa Nyas is a registered Trust delivering enterprise-grade solar, telecom, automation, security, IT, marketing, data, and real estate services across Lucknow and Deoria, Uttar Pradesh.',
+    title: 'Rao Sewa Nyas (RSN) | Top Registered NGO, Charitable Trust & Solar EPC – Lucknow & Deoria, UP',
+    description: "Rao Sewa Nyas (RSN) is Uttar Pradesh's first trust-owned enterprise platform. Operating commercial Solar EPC, CSR project implementation, E2E data analytics, and 360 marketing. 100% of profit legally funds rural health, education, and animal welfare in UP.",
     canonical: `${BASE_URL}/`,
   },
   {
     path: '/about',
-    title: 'About Us | Philosophy of Self-Funded Philanthropy - Rao Sewa Nyas',
-    description: 'Learn about Rao Sewa Nyas - a self-funded philanthropic Trust combining enterprise excellence in solar, telecom, IT, data, and marketing with sustainable community impact across UP.',
+    title: 'About Us | Rao Sewa Nyas (RSN) - Top Registered Charitable Trust in UP',
+    description: 'Discover Rao Sewa Nyas (RSN), a registered charitable trust (Deed 24/2024, GST 09AAFTR2172R1ZR) operating self-funded commercial divisions to power rural healthcare, education, and solar transition across Lucknow and Deoria, UP.',
     canonical: `${BASE_URL}/about`,
   },
   {
     path: '/operations/for-profit',
-    title: 'Commercial Enterprise Verticals | Solar, Telecom & IT - Rao Sewa Nyas',
-    description: 'Explore our ten enterprise divisions: Solar EPC, Telecom Infrastructure, Automation, Security Systems, IT-Enabled Services, Real Estate, E2E Data Analysis, 360 Marketing, and Campaign Management across Uttar Pradesh.',
+    title: 'Commercial Enterprise Verticals | Solar EPC, Telecom, IT, Data & 360 Marketing – Rao Sewa Nyas',
+    description: 'Commercial enterprise divisions of Rao Sewa Nyas: Commercial Solar EPC, Telecom Infrastructure, Security Grids, IT-Enabled Services, E2E Data Collection, 360 Marketing, and Campaign Management across UP.',
     canonical: `${BASE_URL}/operations/for-profit`,
   },
   {
     path: '/operations/non-profit',
-    title: 'Non-Profit & Philanthropic Initiatives | Rao Sewa Nyas',
-    description: 'Community impact programs funded by enterprise profits: primary healthcare camps, rural education, green energy transition, and women empowerment across UP.',
+    title: 'Non-Profit Initiatives & Rural Upliftment | Registered NGO in Lucknow & UP – Rao Sewa Nyas',
+    description: 'Explore RSN non-profit and charitable programs: rural mobile health clinics, gaushala & animal welfare, girl child education, and clean solar microgrids across Lucknow, Deoria, and Purvanchal.',
     canonical: `${BASE_URL}/operations/non-profit`,
   },
   {
@@ -85,8 +85,8 @@ const ROUTES = [
   },
   {
     path: '/credentials',
-    title: 'Credentials, Registration & Legal Dossier | Rao Sewa Nyas',
-    description: 'Verify official trust deed, PAN, TAN, GSTIN, 12A, 80G, ISO certifications, and verified government portal registration details of Rao Sewa Nyas.',
+    title: 'Credentials & Statutory Registrations | Deed 24/2024, GST, NGO Darpan – Rao Sewa Nyas',
+    description: 'Official statutory compliance dossier of Rao Sewa Nyas (RSN): Deed No. 24/2024, GSTIN 09AAFTR2172R1ZR, NGO Darpan UP/2024/0476210, PAN, TAN, Udyam MSME, and GeM portal registrations.',
     canonical: `${BASE_URL}/credentials`,
   },
   {
